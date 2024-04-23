@@ -52,5 +52,26 @@ notes.post("/", (req, res) => {
   }
 });
 
+//the delete method passes in the id parameter to search on the backend
+notes.delete("/:id", (req, res) => {
+  const { id } = req.params;
+  readFromFile(destination).then((data) => {
+    //change the text to an array object
+    const parseData = JSON.parse(data);
+    //get the index of the selected note
+    let index = parseData.findIndex((idx) => idx.id == id);
+    //remove the selected note from the array
+    parseData.splice(index, 1);
+    console.log(parseData);
+    res.send();
+    //add the data to the backend file
+    fs.writeFile(destination, JSON.stringify(parseData), (err) =>
+      err
+        ? console.error(err)
+        : console.info(`\nData written to ${destination}`)
+    );
+  });
+});
+
 //export the route
 module.exports = notes;
