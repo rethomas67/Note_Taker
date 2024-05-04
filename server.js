@@ -4,7 +4,7 @@ const path = require("path");
 const api = require("./routes/index.js");
 //the port for the web app
 const PORT = 3001;
-//instantiate expree
+//instantiate express
 const app = express();
 
 // Middleware for parsing JSON and urlencoded form data
