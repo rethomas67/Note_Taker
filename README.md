@@ -12,11 +12,11 @@ N/A
 
 When Note Taker is opened, a link is presented for the notes page. When the link to the notes page is clicked, the notes page is opened with a list of existing notes. After a note title and note's text are entered, a save button and clear form button are displayed on the navigation bar at the top of the page. After the save button is clicked, the new note is save and appears on the left sidebar. When an existing note is clicked on the left sidebar, the right sidebar displays the note title and details on the right sidebar, and a button for a new note appears. When the new button is pressed, empty fields are displayed to enter a new note title and text, and the clear button disappears.
 
-Screencastify link:
-https://drive.google.com/file/d/1vWoZW0LDzv41iZp_WFGuwk8XHRP3lFaU/view
+Live URL:
+https://ret-note-taker-dfb070aa0c2b.herokuapp.com/
 
 The link to the GitHub repository is:
-https://github.com/rethomas67/Logo_Generator
+https://github.com/rethomas67/Note_Taker
 
 ## Credits
 
